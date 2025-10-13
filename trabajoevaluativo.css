@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 6px;
+  padding: 10px;
+ }
+label, input{display: none;
+}
+.limitador {
+  width: 90vw;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  nav{
+    flex-direction: column;
+    position: absolute;
+   
+    width: 100px;
+    height: 90vh;
+  
+    background-color: rgb(229, 221, 221);
+    transform: translateX(-200px);
+    transition: all 0.8s;
+  
+  }
+  label{
+   display: inline-block;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 20px 0 20px 25px;
+
+    background-color: #daaa0d;
+    cursor: pointer;
+    z-index: 100;
+  }
+#menu:checked~nav{
+  transform: translateX(0);
+ 
+}
+}
+.link {
+  font-size: clamp(18px, 3vw, 30px);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(73, 71, 71);
+  text-decoration: none;
+  transition: color 0.25s ease, background-color 0.25s ease, padding 0.2s ease;
+}
+
+span {
+  text-decoration: underline;
+}
+
+.inicio2 {
+  text-decoration: underline rgb(255, 49, 49);
+}
+
+.juegos2 {
+  text-decoration: underline rgb(255, 91, 31);
+}
+
+.animes2 {
+  text-decoration: underline green;
+}
+.caras {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+  overflow: hidden;
+}
+
+.cartas2 {
+  text-decoration: underline green;
+}
+
+.pokedex2 {
+  text-decoration: underline rgb(93, 204, 255);
+}
+
+.noticias2 {
+  text-decoration: underline rgb(34, 34, 255);
+}
+
+.Inicio:hover {
+  background-color: rgb(255, 49, 49);
+  color: white;
+  padding: 3px;
+}
+
+.Juegos:hover {
+  background-color: rgb(255, 91, 31);
+  color: white;
+  padding: 3px;
+}
+
+.db:hover {
+  background-color: green;
+  color: white;
+  padding: 3px;
+}
+
+.cartas:hover {
+  background-color: green;
+  color: white;
+  padding: 3px;
+}
+
+.Pokedex:hover {
+  background-color: rgb(93, 204, 255);
+  color: white;
+}
+
+.Noticias:hover {
+  background-color: rgb(34, 34, 255);
+  color: white;
+  padding: 3px;
+}
+
+.caras1 {
+  background-color: rgb(100, 101, 163);
+}
+
+.caras2 {
+  background-color: rgb(21, 177, 0);
+}
+
+.caras3 {
+  background-color: rgb(64, 147, 255);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.4;
+  padding: 30px 16px;
+}
+
+.caras1:hover {
+  background-color: rgb(76, 76, 122);
+  transform: scale(1.03);
+}
+
+.caras2:hover {
+  background-color: rgb(21, 200, 20);
+  transform: scale(1.03);
+}
+
+.caras3:hover {
+  background-color: rgb(5, 72, 255);
+  transform: scale(1.03);
+}
+.texto {
+  padding: 0 16px;
+}
+h3 {
+  line-height: 1.4;
+}
+p {
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: "Pokemon Hollow";
+  src: url("fuentes/Pokemon Hollow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Encabezados h3 usan la fuente decorativa si está disponible */
+h3 {
+  font-family: "Pokemon Hollow", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+footer {
+  padding: 0;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.aa {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.footermenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+}
+.divfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  margin: 0 12vw;
+  font-size: 25px;
+  padding: 30px;
+}
+section {
+  background-image: url(fnd.jpg);
+  margin-top: 50px;
+}
+footer {
+  background-color: rgb(54, 54, 54);
+}
+body {
+  background-color: rgb(56, 54, 54);
+}
+header {
+  background-color: rgb(255, 255, 255);
+}
+
+.inicioh1 {
+  text-align: center;
+  padding: 0px;
+  font-family: "Pokemon Hollow", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #daaa0d;
+}
