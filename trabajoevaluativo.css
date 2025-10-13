@@ -28,8 +28,8 @@ label, input{display: none;
     height: 90vh;
   
     background-color: rgb(229, 221, 221);
-    transform: translateX(-100%);
-    transition: all 0.8s;
+    transform: translateX(-200px);
+    transition: all 0.4s linear;
   
   }
   label{
@@ -255,3 +255,4 @@ header {
   color: #daaa0d;
 
 }
+
